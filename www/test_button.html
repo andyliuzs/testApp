@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <link href="css/ionic.app.css" rel="stylesheet">
+  -->
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+  <!-- your app's js -->
+  <script src="js/test_button.js"></script>
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+</head>
+<body ng-app="test_button" ng-controller="test_button_control">
+<!--头部-->
+<div class="bar bar-header bar-assertive">
+  <button class="button ion-chevron-left button-clear " ng-click="_back()">返回</button>
+  <h1 class="title">测试button</h1>
+</div>
+<ion-content>
+  <ion-scroll style="height:900px" class=" has-header has-footer has-subheader ">
+    <div style="height:2000px">
+      <!--主要显示内容-->
+      <h3 class="title-left light  energized-bg ">各种button</h3>
+      <p>
+        <button class="button">
+          Default
+        </button>
+      </p>
+
+      <p>
+        <button class="button button-light">
+          button-light
+        </button>
+      </p>
+
+      <p>
+        <button class="button button-stable">
+          button-stable
+        </button>
+      </p>
+
+      <p>
+        <button class="button button-positive">
+          button-positive
+        </button>
+      </p>
+
+      <p>
+        <button class="button button-block button-calm">
+          button-block 样式按钮显示为：display: block，它将完全填充父元素的宽度，包含了内边距属性padding。
+        </button>
+      </p>
+
+      <p>
+        <button class="button button-full button-balanced">
+          使用 button-full 类，可以让按钮显示完全宽度，且不包含内边距padding。
+        </button>
+      </p>
+
+
+      <button class="button button-block button-energized">
+        button-energized
+      </button>
+
+      </br>
+      <p>
+        <button class="button button-assertive">
+          button-assertive
+        </button>
+      </p>
+
+      <p>
+        <button class="button button-royal">
+          button-royal
+        </button>
+      </p>
+
+      <p>
+        <button class="button button-dark">
+          button-dark
+        </button>
+      </p>
+      <h3 class="title title-left light  energized-bg ">不同大小的button</h3>
+      <button class="button button-small button-assertive">button-small button-assertive</button>
+      </br>
+      </br>
+      <button class="button button-large button-assertive">button-large button-assertive</button>
+      </br>
+      <h3 class="title title-left light  energized-bg ">无背景与边框的按钮button-clear</h3>
+      <button class="button button-clear button-assertive">button-clear button-light</button>
+      <h3 class="title title-left light  energized-bg ">无背景按钮button-clear</h3>
+      <p>
+        <button class="button button-outline button-light">button-outline button-light</button>
+      </p>
+      <p>
+        <button class="button button-outline button-stable">button-stable</button>
+      </p>
+      <p>
+        <button class="button button-outline button-positive">button-positive</button>
+      </p>
+      <p>
+        <button class="button button-outline button-calm">button-calm</button>
+      </p>
+      <p>
+        <button class="button button-outline button-balanced">button-balanced</button>
+      </p>
+      <p>
+        <button class="button button-outline button-energized">button-energized</button>
+      </p>
+      <p>
+        <button class="button button-outline button-assertive">button-assertive</button>
+      </p>
+      <p>
+        <button class="button button-outline button-royal">button-royal</button>
+      </p>
+      <p>
+        <button class="button button-outline button-dark">button-dark</button>
+      </p>
+      <h3 class="title title-left light  energized-bg ">图标按钮</h3>
+      <button class="button">
+        <i class="icon ion-load-c"></i>Loading
+      </button>
+      <button class="button icon-left ion-home">Home</button>
+      <button class="button icon-left ion-star button-positive">收藏夹Favorites</button>
+      <button class="button icon-left ion-chevron-left button-clear button-dark">返回</button>
+      <button class="button ion-gear-a"></button>
+      <button class="button ion-navicon button-outline icon-right button-balanced">导航</button>
+    </div>
+  </ion-scroll>
+</ion-content>
+<div class="bar bar-footer bar-positive">
+  <button class="button button-clear ">left</button>
+  <div class="title">底部标签</div>
+  <button class="button button-clear pull-right">right</button>
+</div>
+</body>
+</html>

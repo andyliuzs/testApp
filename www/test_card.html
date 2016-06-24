@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <link href="css/ionic.app.css" rel="stylesheet">
+  -->
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+  <!-- your app's js -->
+  <script src="js/test_card.js"></script>
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+</head>
+<body ng-app="test_card" ng-controller="test_card_control">
+<!--头部-->
+
+<div class="bar bar-header bar-positive">
+  <button class="button ion-chevron-left button-clear" onclick="javascript:history.back();">返回</button>
+  <h1 class="title">测试card</h1>
+</div>
+<ion-content class="has-header has-footer">
+
+  <div class="content has-header">
+    <h3 class="title title-left positive">list card</h3>
+    <!--主要显示内容-->
+    <div class="list card">
+      <div class="item item-avatar">
+        <img src="http://himg.bdimg.com/sys/portrait/item/925ce58898e7ac91e5b8853507.jpg">
+        <h2>pretty hate machine</h2>
+        <p>Nine Inch Nails</p>
+      </div>
+      <div class="item item-image">
+        <img src="http://www.runoob.com/try/demo_source/41D5vU4I1NL.jpg">
+      </div>
+
+      <a class="item item-icon-left assertive">
+        <i class="icon ion-music-note"></i>
+        开始试听
+      </a>
+    </div>
+
+
+    <div class="list card">
+      <div class="item item-avatar">
+        <img src="http://himg.bdimg.com/sys/portrait/item/925ce58898e7ac91e5b8853507.jpg">
+        <h2>andyliu</h2>
+        <p>2012年11月30日22点14分25秒</p>
+      </div>
+      <div class="item item-body">
+        <img class="full-image" src="http://www.runoob.com/try/demo_source/delorean.jpg">
+        <p>
+          你喜欢什么？<br>
+          权力？<br>
+          地位? <br>
+          金钱<br>
+        </p>
+        <p>
+          <a href="#" class="subdued">1 喜欢</a>
+          <a href="#" class="subdued">2 评论</a>
+        </p>
+
+      </div>
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item">
+          <i class="icon ion-thumbsup"></i>
+          喜欢
+        </a>
+        <a class="tab-item">
+          <i class="icon ion-chatbox"></i>
+          评论
+        </a>
+        <a class="tab-item">
+          <i class="icon ion-share"></i>
+          分享
+        </a>
+      </div>
+
+    </div>
+    <br>
+    <span class="item-divider"></span>
+    <label class="toggle">
+      <input type="checkbox">
+      <div class="track">
+        <div class="handle"></div>
+      </div>
+    </label>
+  </div>
+
+
+</ion-content>
+<div class="bar bar-footer bar-positive">
+  <button class="button button-clear ">left</button>
+  <div class="title">底部标签</div>
+  <button class="button button-clear pull-right">right</button>
+</div>
+</body>
+</html>
